@@ -19,6 +19,8 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.integerResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.sp
 import com.example.questtugaslayout_0056.R
 import com.example.questtugaslayout_0056.model.ProfilItem
@@ -28,6 +30,10 @@ fun ProfilCard(
     item: ProfilItem,
     modifier: Modifier = Modifier,
 ) {
+    val nameFontFamily = item.nameFontRes?.let { fontRes ->
+        FontFamily(Font(fontRes))
+    }
+
     Card(
         modifier = modifier.fillMaxWidth(),
         shape = RoundedCornerShape(dimensionResource(R.dimen.card_corner_radius)),
@@ -62,6 +68,7 @@ fun ProfilCard(
                     color = colorResource(item.nameColorRes),
                     fontSize = integerResource(item.nameSizeRes).sp,
                     fontWeight = item.nameFontWeight,
+                    fontFamily = nameFontFamily,
                 )
 
                 item.phoneRes?.let { phoneRes ->

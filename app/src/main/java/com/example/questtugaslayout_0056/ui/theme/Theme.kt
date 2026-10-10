@@ -1,4 +1,4 @@
-package com.example.profilkartu.ui.theme
+package com.example.questtugaslayout_0056.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.lightColorScheme

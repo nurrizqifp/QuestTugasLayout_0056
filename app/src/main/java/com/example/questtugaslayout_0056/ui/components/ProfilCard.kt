@@ -1,4 +1,4 @@
-package com.example.profilkartu.ui.components
+package com.example.questtugaslayout_0056.ui.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement

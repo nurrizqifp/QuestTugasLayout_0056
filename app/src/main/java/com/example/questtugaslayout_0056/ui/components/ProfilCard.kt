@@ -63,6 +63,20 @@ fun ProfilCard(
                     fontSize = integerResource(item.nameSizeRes).sp,
                     fontWeight = item.nameFontWeight,
                 )
+
+                item.phoneRes?.let { phoneRes ->
+                    Text(
+                        text = stringResource(phoneRes),
+                        color = colorResource(item.phoneColorRes),
+                        fontSize = integerResource(R.integer.text_size_card_detail).sp,
+                    )
+                }
+
+                Text(
+                    text = stringResource(item.addressRes),
+                    color = colorResource(item.addressColorRes),
+                    fontSize = integerResource(R.integer.text_size_card_detail).sp,
+                )
             }
 
             CardLogo()

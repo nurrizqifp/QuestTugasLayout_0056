@@ -19,10 +19,12 @@ import androidx.compose.ui.res.integerResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.example.questtugaslayout_0056.R
 import com.example.questtugaslayout_0056.data.daftarProfil
 import com.example.questtugaslayout_0056.ui.components.ProfilCard
+import com.example.questtugaslayout_0056.ui.theme.ProfilKartuTheme
 
 @Composable
 fun ProfilScreen(modifier: Modifier = Modifier) {
@@ -85,4 +87,12 @@ private fun ProfilFooter() {
         textAlign = TextAlign.Center,
         modifier = Modifier.padding(vertical = dimensionResource(R.dimen.footer_padding_vertical)),
     )
+}
+
+@Preview(showBackground = true, showSystemUi = true)
+@Composable
+private fun ProfilScreenPreview() {
+    ProfilKartuTheme {
+        ProfilScreen()
+    }
 }

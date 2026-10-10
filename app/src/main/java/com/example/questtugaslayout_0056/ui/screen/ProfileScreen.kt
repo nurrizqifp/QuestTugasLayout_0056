@@ -48,6 +48,8 @@ fun ProfilScreen(modifier: Modifier = Modifier) {
                 ProfilCard(item = item)
             }
         }
+
+        ProfilFooter()
     }
 }
 
@@ -71,5 +73,16 @@ private fun ProfilHeader() {
             top = dimensionResource(R.dimen.header_subtitle_spacing),
             bottom = dimensionResource(R.dimen.header_padding_bottom),
         ),
+    )
+}
+
+@Composable
+private fun ProfilFooter() {
+    Text(
+        text = stringResource(R.string.footer_copyright),
+        color = colorResource(R.color.text_primary),
+        fontSize = integerResource(R.integer.text_size_footer).sp,
+        textAlign = TextAlign.Center,
+        modifier = Modifier.padding(vertical = dimensionResource(R.dimen.footer_padding_vertical)),
     )
 }

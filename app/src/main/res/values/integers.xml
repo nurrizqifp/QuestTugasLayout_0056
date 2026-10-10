@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="text_size_title">26</integer>
+    <integer name="text_size_subtitle">14</integer>
+    <integer name="text_size_card_name">18</integer>
+    <integer name="text_size_card_name_script">22</integer>
+    <integer name="text_size_card_detail">14</integer>
+    <integer name="text_size_footer">12</integer>
+</resources>
